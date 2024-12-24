@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>תכנות 3 - שיעור 3</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link href="styles/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/bootstrap.bundle.min.js"></script>
+    <script src="jScripts/javascript.js"></script>
+
+    <nav id="mainNav">
+      <div class="container-fluid">
+        <img class="nav-link" style="width: 9rem" src="images/Logo.png" />
+
+        <!-- Hamburger button -->
+        <button id="nav-button" class="btn p-0 d-md-none" onclick="toggleNav()">
+          <img src="images/Hamburger.png" alt="ניווט" />
+        </button>
+
+        <!-- Navigation titles -->
+        <ul id="webNav" class="nav d-none d-md-flex">
+          <li class="nav-item">
+            <a class="TextNav nav-link text-decoration-underline" href="#"
+              >מבוא</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="CurrentPage TextNav nav-link text-decoration-underline"
+              href="#"
+              >יחידות לימוד</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="TextNav nav-link text-decoration-underline" href="#"
+              >אודות</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hidden nav for small screens -->
+      <ul id="mobile-nav" class="nav flex-column d-none">
+        <li class="nav-item">
+          <a class="TextNav nav-link text-decoration-underline" href="#"
+            >מבוא</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="CurrentPage TextNav nav-link text-decoration-underline"
+            href="#"
+            >יחידות לימוד</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="TextNav nav-link text-decoration-underline" href="#"
+            >אודות</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div id="title" class="position-relative text-center">
+      <img class="img-fluid" src="images/UperImg.png" />
+      <h1
+        id="mainTitle"
+        class="position-absolute bottom-0 start-50 translate-middle-x mb-4"
+      >
+        קורס אתיקה במחקר
+      </h1>
+    </div>
+  </head>
+
+  <body lang="he" dir="rtl">
+    <div class="container mt-4">
+      <section class="text-center mb-4">
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- Search Input -->
+          <input
+            type="text"
+            class="form-control d-inline-block w-50"
+            placeholder="שם היחידה"
+            id="search-input"
+          />
+          <img
+            id="searchIcon"
+            style="width: 2.5rem"
+            src="images/SearchIcon.png"
+          />
+          <!-- Counter -->
+          <span id="result-counter" class="mr-3">10/10</span>
+        </div>
+      </section>
+      <ul id="generatorList" class="row list-unstyled"></ul>
+    </div>
+  </body>
+</html>

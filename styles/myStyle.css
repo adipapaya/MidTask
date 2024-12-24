@@ -1,0 +1,92 @@
+﻿body {
+    direction: rtl;
+}
+
+#mainTitle{
+    white-space: nowrap;
+ }
+
+.clickable-card {
+    border: 2px solid #073349; /* Original thin border */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .clickable-card img {
+    height: 150px; /* Uniform height for images */
+    object-fit: cover;
+  }
+  
+  /* Hover effect */
+  .clickable-card:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    border-color: #3CB7F5; /* Change border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+  
+  /* Active (clicked) state */
+  .clickable-card.active {
+    border-color: #D2D2D2; /* Keep the border color when clicked */
+  }
+
+  #mainNav{
+    background-color: #d0dae1;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    text-align: right;
+    direction: rtl;
+ }
+
+ #webNav{
+    position: absolute;
+    top: 0.5rem;
+    margin-right: 10rem;
+ }
+
+ #nav-button{
+    position:absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+ }
+
+  #mobile-nav {
+    background-color: #d0dae1;
+    padding: 0.5rem;
+    border-top: 1px solid #ccc;
+    position:fixed;
+    margin-top: 0rem;
+    z-index: 1;
+    width:100%;
+  }
+  
+  #mobile-nav .nav-link {
+    padding: 0.5rem 1rem;
+    
+  }
+
+  .TextNav{
+    color:#073349;
+
+  }
+
+  .CurrentPage{
+    font-weight: bold;
+  }
+
+  #result-counter{
+    padding: 0.5rem 1rem;
+    color:#073349;
+    font-weight: 700;
+  }
+
+  #searchIcon{
+    margin-right:-2.5rem;
+  }
+
+  .blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+  }
